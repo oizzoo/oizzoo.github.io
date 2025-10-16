@@ -215,6 +215,7 @@ h1 {
 .expandBtn {
   display: block;
   margin-top: 20px;
+  width: 300px;
   margin: 20px auto;
   padding: 12px 25px;
   background: linear-gradient(300deg, #38e54d, #9cff2e, #2192ff);
@@ -226,6 +227,8 @@ h1 {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .expandBtn:hover {
