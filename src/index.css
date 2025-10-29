@@ -1,0 +1,68 @@
+/* ====== GLOBAL STYLES ====== */
+:root {
+  --bg: #0d1117;
+  --text: #e6edf3;
+  --accent: #58a6ff;
+  --text-muted: #9da7b2;
+  --max-width: 1000px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* General layout */
+section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: var(--text);
+  font-weight: 600;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+/* Project cards base */
+.project-card {
+  background: #161b22;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
