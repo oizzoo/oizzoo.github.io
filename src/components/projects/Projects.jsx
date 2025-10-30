@@ -11,16 +11,16 @@ function Projects() {
             <>
             <h2 key={index}>{category}</h2>
              {projectsData[category].map((item, i) => (
-               <React.Fragment key={i}>
+              <div key={i} className="project-card">
               <h3>Title: {item.title}</h3>  
-              <h3>Description:</h3>
+              <h4>Description:</h4>
               <p>{item.desc}</p>
-              <h3>Tech:</h3>
+              <h4>Tech:</h4>
               <p>{item.tech.join(', ')}</p>
-              <h3>Github repo:</h3>
-              <p>{item.github}</p>
-              {item.demo && (<><h3>Demo:</h3><p><a href={item.demo} target="_blank" rel="noopener noreferrer">{item.demo}</a></p></>)}
-              </React.Fragment>
+              <h4>Github repo:</h4>
+              <p><a href={item.github} target="_blank" rel="noopener noreferrer">{item.github}</a></p>
+              {item.demo && (<><h4>Demo:</h4><p><a href={item.demo} target="_blank" rel="noopener noreferrer">{item.demo}</a></p></>)}
+              </div>
             ))}
             </>
             )

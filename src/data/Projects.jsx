@@ -1,5 +1,5 @@
 const projects = {
-  foundations: [
+  Foundations: [
     {
       title: "Capstone Project 1",
       desc: "My first structured website, built with pure HTML and CSS during Angela Yu’s bootcamp.",
@@ -30,7 +30,7 @@ const projects = {
     },
   ],
 
-  javascript: [
+  JavaScript: [
     {
       title: "Dice Game",
       desc: "Random dice roll game built with vanilla JavaScript and DOM manipulation.",
@@ -60,7 +60,7 @@ const projects = {
     },
   ],
 
-  backend: [
+  Backend: [
     {
       title: "Blog App",
       desc: "Dynamic blog built with EJS, Express, and Node.js.",
@@ -82,7 +82,7 @@ const projects = {
     },
   ],
 
-  react: [
+  React: [
     {
       title: "Portfolio React",
       desc: "My modern developer portfolio built with React and Vite.",
