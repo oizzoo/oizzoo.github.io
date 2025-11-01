@@ -32,6 +32,20 @@ aside {
   letter-spacing: 1px;
   font-weight: 700;
   background: linear-gradient(90deg, #00c6ff, #0072ff, #9b5cff);
+  background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: gradientShift 4s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
