@@ -24,3 +24,14 @@ aside {
   border-radius: 12px;
   border: 1px solid #1f2937;
 }
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00c6ff, #0072ff, #9b5cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
