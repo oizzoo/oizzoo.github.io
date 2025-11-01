@@ -1,0 +1,38 @@
+.sidebar {
+  width: 100%;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.category-btn {
+  background: transparent;
+  border: 1px solid #58a6ff;
+  color: #58a6ff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.category-btn:first-child {
+  border-color: #9bbcff;
+  font-weight: 600;
+}
+
+.category-btn:hover {
+  background: #58a6ff22;
+}
+
+.category-btn.active {
+  background: #58a6ff;
+  color: #0d1117;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
