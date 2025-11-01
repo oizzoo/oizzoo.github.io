@@ -1,4 +1,4 @@
 function ProjectPreview() {
-  return <div>Preview</div>;
+  return <div>project preview</div>;
 }
 export default ProjectPreview;

@@ -5,7 +5,7 @@ import ProjectSidebar from "./ProjectSidebar";
 import ProjectPreview from "./ProjectPreview";
 
 function Projects() {
-
+  
   
 
   return (
