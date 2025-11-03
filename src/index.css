@@ -9,6 +9,11 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-y: overlay;
+}
+
+body:hover::-webkit-scrollbar {
+  display: block;
 }
 
 body {
