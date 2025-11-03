@@ -9,14 +9,6 @@
   margin-top: 40px;
 }
 
-aside {
-  flex: 1;
-  background: #0d1117;
-  padding: 20px;
-  border-radius: 12px;
-  border: 1px solid #1f2937;
-}
-
 .project-preview {
   flex: 2;
   background: #0d1117;

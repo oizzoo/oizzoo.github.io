@@ -1,5 +1,8 @@
 import "./ProjectSidebar.css"
+import "./ProjectList.css";
+import { motion, useMotionValue, useTransform } from "framer-motion";
 import projectsData from "../../data/Projects";
+import GlowCard from "../ui/GlowCard";
 import { useState, useMemo } from "react";
 
 
@@ -30,12 +33,20 @@ function ProjectSidebar() {
           </button>
         ))}
       </div>
-      <div className="projects-list">
+      <div className="projects-grid">
         {visibleProjects.map((project) => (
-          <div key={project.title} className="project-item">
-            <h3>{project.title}</h3>
-            <p>{project.desc}</p>
-          </div>
+              <GlowCard key={project.title} className="project-card">
+                <h3>{project.title}</h3>
+                <p>{project.desc}</p>
+                <p className="tech">{project.tech.join(", ")}</p>
+
+                <div className="links">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">Github</a>
+                  {project.demo && (
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer">Demo</a>
+                  )}
+                </div>
+              </GlowCard>
         ))}
       </div>
     </aside>
