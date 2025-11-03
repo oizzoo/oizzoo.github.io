@@ -5,10 +5,12 @@
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   position: relative;
   background: #161b22;
   border: 1px solid #30363d;
-  background: #161b22;
   border-radius: 12px;
   padding: 20px;
   transition: all 0.3s ease;
@@ -33,14 +35,19 @@
 .project-card .tech {
   font-size: 0.85rem;
   color: #8b949e;
+  margin-top: auto;
+  margin-bottom: 12px;
 }
 
 .project-card .links a {
   color: #58a6ff;
   font-weight: 500;
   text-decoration: none;
+  gap: 10px;
   margin-right: 10px;
+  margin-top: auto;
 }
+
 
 .project-card .links a:hover {
   text-decoration: underline;
