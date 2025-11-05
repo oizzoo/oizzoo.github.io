@@ -1,20 +1,14 @@
 .projects-wrapper {
-  padding: 80px 10%;
+  padding: 80px 5%;
   color: #e6edf3;
 }
 
 .projects-container {
   display: flex;
+  grid-template-columns: 1fr 2.3fr;
   gap: 40px;
   margin-top: 40px;
-}
-
-.project-preview {
-  flex: 2;
-  background: #0d1117;
-  padding: 20px;
-  border-radius: 12px;
-  border: 1px solid #1f2937;
+  width: 90%;
 }
 
 .section-title {
