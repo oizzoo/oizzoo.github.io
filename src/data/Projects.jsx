@@ -6,6 +6,7 @@ const projects = {
       tech: ["HTML", "CSS"],
       github: "https://github.com/oizzoo/Capstone-project-1",
       demo: "https://oizzoo.github.io/Capstone-project-1/",
+      video: "./videos/firstcapstone.mp4"
     },
     {
       title: "Tindog",
@@ -13,6 +14,7 @@ const projects = {
       tech: ["HTML", "CSS", "Bootstrap"],
       github: "https://github.com/oizzoo/Tindog-project",
       demo: "https://oizzoo.github.io/Tindog-project/",
+      video: "./videos/tindog.mp4"
     },
     {
       title: "Mondrian Painting",
@@ -37,6 +39,7 @@ const projects = {
       tech: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/oizzoo/dice-game",
       demo: "https://oizzoo.github.io/dice-game/",
+      video: "./videos/diceGame.mp4"
     },
     {
       title: "Drum Kit Game",
@@ -44,6 +47,7 @@ const projects = {
       tech: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/oizzoo/drum-kit-game",
       demo: "https://oizzoo.github.io/drum-kit-game/",
+      video: "./videos/drumKit.mp4"
     },
     {
       title: "Simon Game",
@@ -51,12 +55,14 @@ const projects = {
       tech: ["HTML", "CSS", "JavaScript", "jQuery"],
       github: "https://github.com/oizzoo/SimonGame",
       demo: "https://oizzoo.github.io/SimonGame/",
+      video: "./videos/simongame.mp4"
     },
     {
       title: "Old Portfolio (Pre-React)",
       desc: "My first personal portfolio built with vanilla JS and CSS. Later rebuilt completely in React to reflect my growth as a developer.",
       tech: ["HTML", "CSS", "JavaScript"],
       demo: "https://oizzoo.github.io/",
+      video: "./videos/portfolioPreReact.mp4"
     },
   ],
 
@@ -66,6 +72,7 @@ const projects = {
       desc: "Dynamic blog built with EJS, Express, and Node.js.",
       tech: ["EJS", "Express", "Node.js"],
       github: "https://github.com/oizzoo/EJSBlog",
+      video: "./videos/BLOGAPP.mp4"
     },
     {
       title: "Books Project",
@@ -73,12 +80,14 @@ const projects = {
       tech: ["Node.js", "Express", "PostgreSQL"],
       github: "https://github.com/oizzoo/capstone-Book-proj",
       demo: "https://capstone-book-proj.onrender.com/",
+      video: "./videos/booksproject.mp4"
     },
     {
       title: "SuperHero API (WIP)",
       desc: "A REST API app that fetches superhero data from an external API. Planned for a React rebuild.",
       tech: ["Node.js", "Express", "Axios"],
       github: "https://github.com/oizzoo/superHeroApi",
+      video: "./videos/superheroapiProj.mp4"
     },
   ],
 
