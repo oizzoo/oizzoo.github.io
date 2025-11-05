@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useTransform } from "framer-motion";
 
-function GlowCard({children}) {
+function GlowCard({children, className, onClick}) {
     const x = useMotionValue(0);
     const y = useMotionValue(0);
 
@@ -12,7 +12,8 @@ function GlowCard({children}) {
     
     return (
         <motion.div 
-            className="project-card"
+            className={className}
+            onClick={onClick}
             style={{background}}
             onMouseMove={(e) => {
                 const rect = e.currentTarget.getBoundingClientRect();

@@ -1,18 +1,15 @@
 import "./ProjectSidebar.css"
 import "./ProjectList.css";
-import { motion, useMotionValue, useTransform } from "framer-motion";
 import projectsData from "../../data/Projects";
 import GlowCard from "../ui/GlowCard";
 import { useState, useMemo } from "react";
 
 
-function ProjectSidebar() {
+function ProjectSidebar({ activeCategory, setActiveCategory, setSelectedProject }) {
     const categories = useMemo(
     () => ["All", ...Object.keys(projectsData)],
     [projectsData]
   );
-
-  const [activeCategory, setActiveCategory] = useState("All");
 
   const visibleProjects = (
         activeCategory === "All"
@@ -35,9 +32,19 @@ function ProjectSidebar() {
       </div>
       <div className="projects-grid">
         {visibleProjects.map((project) => (
-              <GlowCard key={project.title} className="project-card">
+              <GlowCard
+                key={project.title}
+                className="project-card"
+                onClick={() => {
+  console.log("Clicked:", project.title);
+  setSelectedProject(project);
+}}
+
+              >
+                
                 <h3>{project.title}</h3>
                 <p>{project.desc}</p>
+                
                 <p className="tech">{project.tech.join(", ")}</p>
 
                 <div className="links">

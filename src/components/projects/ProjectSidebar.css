@@ -8,6 +8,7 @@ aside {
   padding: 20px;
   border-radius: 12px;
   border: 1px solid #1f2937;
+  width: 50%
 }
 
 /* Categories */
@@ -15,7 +16,7 @@ aside {
   display: flex;
   justify-content: center;
   gap: 15px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 25px;
 }
 
@@ -30,6 +31,7 @@ aside {
   font-weight: 500;
   letter-spacing: 0.3px;
   transition: all 0.25s ease;
+  flex-shrink: 0;
 }
 
 .category-btn:hover {
