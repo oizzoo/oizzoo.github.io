@@ -1,0 +1,62 @@
+.contact {
+  text-align: center;
+  padding: 100px 0;
+  color: #e6edf3;
+}
+
+.hint {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #9da7b2;
+  margin-bottom: 0px;
+}
+
+.email-box {
+  display: inline-block;
+  background: rgba(88, 166, 255, 0.1);
+  border: 1px solid #58a6ff33;
+  color: #58a6ff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  margin: 15px 0 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.email-box:hover {
+  background: rgba(88, 166, 255, 0.25);
+  box-shadow: 0 0 15px rgba(88, 166, 255, 0.3);
+}
+
+.copied-msg {
+  margin-left: 10px;
+  color: #7ee787;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #58a6ff;
+  border: 1px solid #58a6ff33;
+  padding: 12px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  background: rgba(88, 166, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: rgba(88, 166, 255, 0.25);
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
+  transform: translateY(-2px);
+}
