@@ -39,3 +39,22 @@
 .stack strong {
   color: var(--accent);
 }
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-text h2{
+    text-align: center;
+}
+}

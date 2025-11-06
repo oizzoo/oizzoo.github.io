@@ -59,3 +59,21 @@ aside {
   padding: 8px 0;
   color: #c9d1d9;
 }
+
+/* ===== MOBILE LAYOUT ===== */
+@media (max-width: 1024px) {
+  aside {
+    width: 90%;
+  }
+
+  .categories {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .category-btn {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+}

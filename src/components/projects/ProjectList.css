@@ -54,3 +54,13 @@
 .project-card .links a:hover {
   text-decoration: underline;
 }
+
+/* ===== MOBILE LAYOUT ===== */
+@media (max-width: 1024px) {
+  .projects-card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+}

@@ -68,3 +68,12 @@
   background: rgba(88, 166, 255, 0.1);
   transform: scale(1.03);
 }
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
