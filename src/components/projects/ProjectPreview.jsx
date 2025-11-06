@@ -1,18 +1,19 @@
+import React, { forwardRef } from "react";
 import "./ProjectPreview.css"
 
-function ProjectPreview({project}) {
+const ProjectPreview = forwardRef(({project}, ref) => {
 
   if (!project) {
-  return (
-    <div className="project-preview">
-      <p className="placeholder">← Click a project to preview it</p>
-    </div>
-  )
-}
+    return (
+      <div className="project-preview" ref={ref}>
+        <p className="placeholder">← Click a project to preview it</p>
+      </div>
+      )
+  }
 
 
   return (
-    <div className="project-preview">
+    <div className="project-preview" ref={ref}>
       <h2>{project.title}</h2>
 
       {project.video ? (
@@ -35,7 +36,7 @@ function ProjectPreview({project}) {
         <p className="no-preview">No preview available</p>
       )}
     </div>
+  );
+});
 
-  )
-}
 export default ProjectPreview;

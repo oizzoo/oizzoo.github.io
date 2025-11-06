@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef } from 'react';
 import "./Projects.css";
 import projectsData from '../../data/Projects';
 import ProjectSidebar from "./ProjectSidebar";
@@ -7,7 +7,15 @@ import ProjectPreview from "./ProjectPreview";
 function Projects() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [selectedProject, setSelectedProject] = useState(null);
+  const previewRef = useRef(null);
 
+  const handleSelectProject = (project) => {
+    setSelectedProject(project);
+
+    if (previewRef.current) {
+      previewRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   return (
   <section id="projects" className="projects">
@@ -18,10 +26,10 @@ function Projects() {
         <ProjectSidebar
           activeCategory={activeCategory}
           setActiveCategory={setActiveCategory}
-          setSelectedProject={setSelectedProject}
+          setSelectedProject={handleSelectProject}
         />
 
-        <ProjectPreview project={selectedProject} />
+        <ProjectPreview ref={previewRef} project={selectedProject} />
       </div>
     </div>
   </section>
