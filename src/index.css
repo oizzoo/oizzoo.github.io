@@ -7,14 +7,19 @@
   --max-width: 1000px;
 }
 
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
+body {
+  margin: 0;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
   overflow-y: overlay;
+  max-width: 100%;
 }
 
 body:hover::-webkit-scrollbar {
