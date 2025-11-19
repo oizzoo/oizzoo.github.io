@@ -104,7 +104,7 @@ const projects = {
       desc: "My BookTracker app made with supabase and REACT",
       tech: ["React", "Vite", "PostgreSQL, Supabase"],
       github: "https://github.com/oizzoo/capstone-Book-proj/tree/react-frontend",
-      demo: "https://oizzoo.github.io/capstone-Book-proj/",
+      video: "./videos/book-app-react.mp4",
     },
   ],
 };
