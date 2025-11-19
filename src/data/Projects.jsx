@@ -61,7 +61,7 @@ const projects = {
       title: "Old Portfolio (Pre-React)",
       desc: "My first personal portfolio built with vanilla JS and CSS. Later rebuilt completely in React to reflect my growth as a developer.",
       tech: ["HTML", "CSS", "JavaScript"],
-      demo: "https://oizzoo.github.io/",
+      demo: "https://oizzoo.github.io/old-portfolio/",
       video: "./videos/portfolioPreReact.mp4"
     },
   ],
