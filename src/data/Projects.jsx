@@ -107,6 +107,7 @@ const projects = {
       tech: ["React", "Vite", "TypeScript"],
       github: "https://github.com/oizzoo/first-TS-mini-project",
       demo: "oizzoo.github.io/first-TS-mini-project/",
+      video: "./videos/first-typescript-app.mp4"
     }
   ]
 };
