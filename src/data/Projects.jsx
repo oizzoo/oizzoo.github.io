@@ -72,11 +72,10 @@ const projects = {
       desc: "CRUD web app integrated with PostgreSQL. Built to understand database operations and RESTful structure.",
       tech: ["Node.js", "Express", "PostgreSQL"],
       github: "https://github.com/oizzoo/capstone-Book-proj",
-      demo: "https://capstone-book-proj.onrender.com/",
       video: "./videos/booksproject.mp4"
     },
     {
-      title: "SuperHero API (WIP)",
+      title: "SuperHero API",
       desc: "A REST API app that fetches superhero data from an external API. Planned for a React rebuild.",
       tech: ["Node.js", "Express", "Axios"],
       github: "https://github.com/oizzoo/superHeroApi",
@@ -89,18 +88,25 @@ const projects = {
       title: "Portfolio React",
       desc: "My modern developer portfolio built with React and Vite.",
       tech: ["React", "Vite", "Framer Motion"],
-      github: "https://github.com/oizzoo/portfolio-react",
-      demo: "https://oizzoo.github.io/portfolio-react/",
     },
     {
       title: "Books project BUT IN REACT",
       desc: "My BookTracker app made with supabase and REACT",
       tech: ["React", "Vite", "PostgreSQL, Supabase"],
       github: "https://github.com/oizzoo/capstone-Book-proj/tree/react-frontend",
-      demo: "https://oizzoo.github.io/capstone-Book-proj/",
       video: "./videos/book-app-react.mp4",
     },
   ],
+
+  TypeScript: [
+    {
+      title: "Add goals app",
+      desc: "First mini-app to learn TS with REACT",
+      tech: ["React", "Vite", "TypeScript"],
+      github: "https://github.com/oizzoo/first-TS-mini-project",
+      video: "",
+    }
+  ]
 };
 
 export default projects;
