@@ -88,6 +88,8 @@ const projects = {
       title: "Portfolio React",
       desc: "My modern developer portfolio built with React and Vite.",
       tech: ["React", "Vite", "Framer Motion"],
+      github: "https://github.com/oizzoo/portfolio-react",
+      demo: "https://oizzoo.github.io/portfolio-react/",
     },
     {
       title: "Books project BUT IN REACT",
