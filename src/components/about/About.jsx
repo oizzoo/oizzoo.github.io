@@ -22,8 +22,8 @@ function About() {
             hood — from frontend design to backend logic.
           </p>
           <p className="stack">
-            <strong>Tech stack:</strong> React · JavaScript (ES6+) · Node.js ·
-            Express · PostgreSQL · HTML · CSS · Git
+            <strong>Tech stack:</strong> TypeScript · React · JavaScript (ES6+) · Node.js ·
+            Express · PostgreSQL · HTML · CSS · Git 
           </p>
         </div>
       </div>
