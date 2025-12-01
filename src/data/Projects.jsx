@@ -106,7 +106,7 @@ const projects = {
       desc: "First mini-app to learn TS with REACT",
       tech: ["React", "Vite", "TypeScript"],
       github: "https://github.com/oizzoo/first-TS-mini-project",
-      demo: "oizzoo.github.io/first-TS-mini-project/",
+      demo: "https://oizzoo.github.io/first-TS-mini-project/",
       video: "./videos/first-typescript-app.mp4"
     }
   ]
