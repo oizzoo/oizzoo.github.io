@@ -109,6 +109,15 @@ const projects = {
       demo: "https://oizzoo.github.io/first-TS-mini-project/",
       video: "./videos/first-typescript-app.mp4"
     }
+  ],
+
+  ClientWork: [
+    {
+      title: "Hubertkniaz.pl - Imaginarium",
+      desc: "Professional portfolio for narrative designer",
+      tech: ["HTML5", "CSS3", "Vanilla JavaScript", ""],
+      demo: "https://www.hubertkniaz.pl/",
+    }
   ]
 };
 
