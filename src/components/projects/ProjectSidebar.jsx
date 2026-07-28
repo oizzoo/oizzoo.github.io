@@ -65,6 +65,16 @@ function ProjectSidebar({
                   Demo
                 </a>
               )}
+              {project.links?.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {link.label}
+                </a>
+              ))}
             </div>
           </GlowCard>
         ))}
