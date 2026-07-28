@@ -11,9 +11,17 @@ function GlowCard({children, className, onClick}) {
     );
     
     return (
-        <motion.div 
+        <motion.div
             className={className}
             onClick={onClick}
+            role={onClick ? "button" : undefined}
+            tabIndex={onClick ? 0 : undefined}
+            onKeyDown={(e) => {
+                if (onClick && (e.key === "Enter" || e.key === " ") && e.target === e.currentTarget) {
+                    e.preventDefault();
+                    onClick(e);
+                }
+            }}
             style={{background}}
             onMouseMove={(e) => {
                 const rect = e.currentTarget.getBoundingClientRect();

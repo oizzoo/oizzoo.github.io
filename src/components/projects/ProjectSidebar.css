@@ -16,7 +16,7 @@ aside {
   display: flex;
   justify-content: center;
   gap: 15px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-bottom: 25px;
 }
 

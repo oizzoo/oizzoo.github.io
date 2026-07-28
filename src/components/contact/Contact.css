@@ -13,6 +13,7 @@
 
 .email-box {
   display: inline-block;
+  font: inherit;
   background: rgba(88, 166, 255, 0.1);
   border: 1px solid #58a6ff33;
   color: #58a6ff;

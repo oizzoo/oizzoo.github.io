@@ -23,6 +23,11 @@
   box-shadow: 0 0 10px #58a6ff55;
 }
 
+.project-card:focus-visible {
+  outline: 2px solid #58a6ff;
+  outline-offset: 2px;
+}
+
 .project-card h3 {
   color: #58a6ff;
   margin-bottom: 10px;

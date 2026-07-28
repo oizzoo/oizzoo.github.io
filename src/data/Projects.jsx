@@ -93,7 +93,7 @@ const projects = {
     {
       title: "Books project BUT IN REACT",
       desc: "My BookTracker app made with supabase and REACT",
-      tech: ["React", "Vite", "PostgreSQL, Supabase"],
+      tech: ["React", "Vite", "PostgreSQL", "Supabase"],
       github: "https://github.com/oizzoo/capstone-Book-proj/tree/react-frontend",
       demo: "https://oizzoo.github.io/capstone-Book-proj/",
       video: "./videos/book-app-react.mp4",
@@ -115,7 +115,7 @@ const projects = {
     {
       title: "Hubertkniaz.pl - Imaginarium",
       desc: "Professional portfolio for narrative designer",
-      tech: ["HTML5", "CSS3", "Vanilla JavaScript", ""],
+      tech: ["HTML5", "CSS3", "Vanilla JavaScript"],
       demo: "https://www.hubertkniaz.pl/",
     }
   ]
