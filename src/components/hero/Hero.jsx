@@ -7,10 +7,11 @@ function Hero() {
         <h1>
           Hey, I'm <span className="accent">Jakub Stożek</span>
         </h1>
-        <p className="subtitle">Full-Stack Developer in progress</p>
+        <p className="subtitle">Junior Full-Stack Developer</p>
         <p className="desc">
-          I build modern, clean, and responsive web apps — always learning,
-          improving, and pushing forward.
+          I build websites and e-commerce commercially — WordPress plugins and
+          Gutenberg blocks, PrestaShop modules and themes, and storefronts with
+          Next.js + Payload CMS.
         </p>
       </div>
     </section>
