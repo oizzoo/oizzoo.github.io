@@ -60,10 +60,10 @@ function Contact() {
       </div>
 
       <p className="hint">(click the email to copy)</p>
-      <div className="email-box" onClick={handleCopy}>
-        <p>{email}</p>
+      <button type="button" className="email-box" onClick={handleCopy}>
+        <span>{email}</span>
         {copied && <span className="copied-msg">Copied!</span>}
-      </div>
+      </button>
     </section>
   );
 }
