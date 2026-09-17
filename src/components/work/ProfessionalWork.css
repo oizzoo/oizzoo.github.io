@@ -17,7 +17,7 @@
 
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
@@ -31,10 +31,6 @@
   font-weight: 600;
   letter-spacing: 0.5px;
   color: #58a6ff;
-  border: 1px solid #58a6ff33;
-  background: rgba(88, 166, 255, 0.08);
-  border-radius: 20px;
-  padding: 3px 12px;
   margin-bottom: 12px;
 }
 

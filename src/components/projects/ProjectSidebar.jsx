@@ -1,7 +1,6 @@
 import "./ProjectSidebar.css";
 import "./ProjectList.css";
 import projectsData from "../../data/Projects";
-import GlowCard from "../ui/GlowCard";
 import { useMemo } from "react";
 
 function ProjectSidebar({
@@ -29,6 +28,7 @@ function ProjectSidebar({
               activeCategory === category ? "active" : ""
             }`}
             onClick={() => setActiveCategory(category)}
+            aria-pressed={activeCategory === category}
           >
             {category}
           </button>
@@ -36,10 +36,9 @@ function ProjectSidebar({
       </div>
       <div className="projects-grid">
         {visibleProjects.map((project) => (
-          <GlowCard
+          <article
             key={project.title}
             className="project-card"
-            onClick={() => setSelectedProject(project)}
           >
             <h3>{project.title}</h3>
             <p>{project.desc}</p>
@@ -47,13 +46,22 @@ function ProjectSidebar({
             <p className="tech">{project.tech.join(", ")}</p>
 
             <div className="links">
+              <button
+                type="button"
+                className="project-select"
+                aria-controls="project-preview"
+                aria-label={`Preview ${project.title}`}
+                onClick={() => setSelectedProject(project)}
+              >
+                Preview
+              </button>
               {project.github && (
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Github
+                  GitHub
                 </a>
               )}
               {project.demo && (
@@ -76,7 +84,7 @@ function ProjectSidebar({
                 </a>
               ))}
             </div>
-          </GlowCard>
+          </article>
         ))}
       </div>
     </aside>

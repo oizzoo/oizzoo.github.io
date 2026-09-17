@@ -1,6 +1,6 @@
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 20px;
   height: auto;
 }
@@ -11,16 +11,12 @@
   justify-content: center;
   position: relative;
   height: auto;
-  background: #161b22;
-  border: 1px solid #30363d;
-  border-radius: 12px;
-  padding: 20px;
-  transition: all 0.3s ease;
+  border-top: 1px solid #30363d;
+  padding: 20px 0;
 }
 
 .project-card:hover {
   border-color: #58a6ff;
-  box-shadow: 0 0 10px #58a6ff55;
 }
 
 .project-card:focus-visible {
@@ -29,6 +25,7 @@
 }
 
 .project-card h3 {
+  margin-top: 0;
   color: #58a6ff;
   margin-bottom: 10px;
 }
@@ -68,4 +65,16 @@
     justify-content: center;
     gap: 40px;
   }
+}
+
+.project-card .links {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+.project-select {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid #30363d;
+  padding: 6px 12px;
 }

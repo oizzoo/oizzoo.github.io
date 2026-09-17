@@ -2,8 +2,9 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav className="nav">
-      <h2 className="logo">Oizzoo's Portfolio</h2>
+    <nav className="nav" aria-label="Main navigation">
+      <a className="skip-link" href="#main-content">Skip to content</a>
+      <a className="logo" href="#hero">Jakub Stożek</a>
       <ul className="links">
         <li><a href="#about">About</a></li>
         <li><a href="#work">Work</a></li>

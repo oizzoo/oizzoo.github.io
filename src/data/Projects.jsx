@@ -2,11 +2,12 @@ const projects = {
   "Full-Stack": [
     {
       title: "BookTracker",
-      desc: "My first full-stack project — a book tracking app with a Node.js/Express + PostgreSQL backend, rebuilt with a React + Supabase frontend. Actively developed.",
+      desc: "My first full-stack project: a book tracking app with a Node.js/Express + PostgreSQL backend, rebuilt with a React + Supabase frontend. Actively developed.",
       tech: ["React", "Vite", "Node.js", "Express", "PostgreSQL", "Supabase"],
       github: "https://github.com/oizzoo/capstone-Book-proj/tree/react-frontend",
       demo: "https://oizzoo.github.io/capstone-Book-proj/",
       video: "./videos/book-app-react.mp4",
+      poster: "./previews/booktracker.jpg",
     },
   ],
 
@@ -17,6 +18,7 @@ const projects = {
       tech: ["EJS", "Express", "Node.js"],
       github: "https://github.com/oizzoo/EJSBlog",
       video: "./videos/BLOGAPP.mp4",
+      poster: "./previews/blog.jpg",
     },
     {
       title: "SuperHero API",
@@ -24,24 +26,26 @@ const projects = {
       tech: ["Node.js", "Express", "Axios"],
       github: "https://github.com/oizzoo/superHeroApi",
       video: "./videos/superheroapiProj.mp4",
+      poster: "./previews/superhero.jpg",
     },
   ],
 
   TypeScript: [
     {
       title: "Add Goals App",
-      desc: "A goal-tracking mini app — my first project written in TypeScript with React.",
+      desc: "A goal-tracking mini app, my first project written in TypeScript with React.",
       tech: ["React", "Vite", "TypeScript"],
       github: "https://github.com/oizzoo/first-TS-mini-project",
       demo: "https://oizzoo.github.io/first-TS-mini-project/",
       video: "./videos/first-typescript-app.mp4",
+      poster: "./previews/goals.jpg",
     },
   ],
 
   JavaScript: [
     {
       title: "JavaScript Games",
-      desc: "A trio of vanilla JS games — Dice Game, Drum Kit and Simon — built to practice DOM manipulation, events and timing logic.",
+      desc: "Dice Game, Drum Kit and Simon: three vanilla JS games built to practice DOM manipulation, events and timing logic.",
       tech: ["HTML", "CSS", "JavaScript", "jQuery"],
       links: [
         { label: "Dice", href: "https://oizzoo.github.io/dice-game/" },
@@ -49,6 +53,7 @@ const projects = {
         { label: "Simon", href: "https://oizzoo.github.io/SimonGame/" },
       ],
       video: "./videos/simongame.mp4",
+      poster: "./previews/games.jpg",
     },
   ],
 };

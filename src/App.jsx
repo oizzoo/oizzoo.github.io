@@ -9,11 +9,13 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <ProfessionalWork />
-      <Projects />
-      <Contact />
+      <main id="main-content" tabIndex={-1}>
+        <Hero />
+        <About />
+        <ProfessionalWork />
+        <Projects />
+        <Contact />
+      </main>
     </>
   );
 }

@@ -1,18 +1,7 @@
-import { motion } from "framer-motion";
-import {useState} from "react";
 import "./Contact.css";
 
 function Contact() {
-  const [copied, setCopied] = useState(false);
-
   const email = "stozjakub@gmail.com"
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000)
-  };
-
 
   const links = [
     {
@@ -39,31 +28,27 @@ function Contact() {
     <section id="contact" className="contact">
       <h2 className="section-title">Contact</h2>
 
-      <p>Let’s connect! you can find me here:</p>
+      <p>Have a project in mind? Email me or find me on LinkedIn.</p>
 
 
       <div className="contact-links">
         {links.map((link) => (
-          <motion.a
+          <a
             key={link.name}
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
             className="contact-btn"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
           >
             {link.svg}
             <span>{link.name}</span>
-          </motion.a>
+          </a>
         ))}
       </div>
 
-      <p className="hint">(click the email to copy)</p>
-      <button type="button" className="email-box" onClick={handleCopy}>
+      <a className="email-box" href={`mailto:${email}`}>
         <span>{email}</span>
-        {copied && <span className="copied-msg">Copied!</span>}
-      </button>
+      </a>
     </section>
   );
 }

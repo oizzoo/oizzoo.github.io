@@ -13,12 +13,15 @@ const ProjectPreview = forwardRef(({project}, ref) => {
 
 
   return (
-    <div className="project-preview" ref={ref}>
-      <h2>{project.title}</h2>
+    <div id="project-preview" className="project-preview" ref={ref} tabIndex={-1} aria-label="Project preview">
+      <h3>{project.title}</h3>
 
       {project.video ? (
         <video
+          key={project.video}
           src={project.video}
+          preload="none"
+          poster={project.poster}
           controls
           className="project-video"
           playsInline

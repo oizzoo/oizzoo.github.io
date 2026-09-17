@@ -1,20 +1,19 @@
-# oizzoo.github.io — personal portfolio
+# oizzoo.github.io: personal portfolio
 
-Portfolio of **Jakub Stożek** — junior full-stack developer.
+Portfolio of **Jakub Stożek**, junior full-stack developer.
 Live at **[oizzoo.github.io](https://oizzoo.github.io/)**.
 
 ## Stack
 
 - [React 19](https://react.dev/) + [Vite 7](https://vite.dev/)
-- [Framer Motion](https://motion.dev/) for animations
 - Plain CSS per component (no framework)
 - Deployed to GitHub Pages via `gh-pages`
 
 ## Structure
 
-- `src/components/` — one folder per section (`navbar`, `hero`, `about`, `work`, `projects`, `contact`) plus shared `ui/` primitives
-- `src/data/` — content data: `Professional.jsx` (commercial work) and `Projects.jsx` (personal projects)
-- `public/videos/` — project demo recordings
+- `src/components/`: one folder per section (`navbar`, `hero`, `about`, `work`, `projects`, `contact`)
+- `src/data/`: content data: `Professional.jsx` (commercial work) and `Projects.jsx` (personal projects)
+- `public/videos/`: project demo recordings
 
 ## Development
 

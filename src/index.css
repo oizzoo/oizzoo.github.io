@@ -1,5 +1,6 @@
 /* ====== GLOBAL STYLES ====== */
 :root {
+  color-scheme: dark;
   --bg: #0d1117;
   --text: #e6edf3;
   --accent: #58a6ff;
@@ -22,23 +23,30 @@ html {
   max-width: 100%;
 }
 
-body:hover::-webkit-scrollbar {
-  display: block;
+* {
+  box-sizing: border-box;
 }
-
-body {
-  margin: 0;
-  font-family: 'Inter', 'Roboto', sans-serif;
-  background-color: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+}
+.skip-link {
+  position: absolute;
+  left: 20px;
+  top: -100px;
+  background: var(--bg);
+  padding: 12px;
+}
+.skip-link:focus {
+  top: 10px;
 }
 
 /* General layout */
 section {
   max-width: 100%;
   margin: 0 auto;
-  padding: 100px 20px;
+  padding: 72px 20px;
+  scroll-margin-top: 120px;
 }
 
 /* Headings */
@@ -59,13 +67,17 @@ a:hover {
 button {
   background: var(--accent);
   border: none;
-  color: #fff;
+  color: var(--bg);
+  font: inherit;
   padding: 10px 20px;
-  border-radius: 8px;
+  border-radius: 3px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
 button:hover {
-  transform: scale(1.03);
   opacity: 0.9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
